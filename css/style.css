@@ -11,11 +11,14 @@ body {
     font-style: 14px;
     color: #0A1434;
 }
-
-.header {
+.container {
     max-width: 1146px;
     margin: auto;
+}
+.header {
     padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 12px;
 }
 
 .navbar {
@@ -96,4 +99,84 @@ body {
 
 .search-button-text {
     margin-left: 5px;
+}
+
+.page-content {
+    display: grid;
+    grid-template-columns: 9fr 3fr;
+    grid-column-gap: 30px;
+}
+
+.main {
+
+}
+
+.card-image {
+    border-radius: 10px;
+    width: 264px;
+    height: 178px;
+    object-fit: cover; /* картинка обрежется, если не влезет */
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.card {
+    margin-bottom: 39px;
+    width: 264px;
+    height: 279px;
+}
+
+.card:not(:nth-child(3n)) {
+    margin-right: 20px;
+}
+
+.card-title {
+    line-height: 19px;
+    letter-spacing: 0%;
+    text-align: left; 
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    margin-bottom: 5px;
+    margin-top: 12px;
+    color: rgba(37, 110, 235, 1);
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-link {
+    text-decoration: none;
+}
+
+.card-price {
+    display: block;
+    line-height: 19px;
+    font-style: 16px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.card-text {
+    line-height: 16px;
+    letter-spacing: 0%;
+    text-align: left;
+    color: rgba(196, 196, 196, 1);
+    margin-bottom: 4px;
+    margin-top: 0;
+}
+
+.like {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    /* margin-left: 15px; */
+    margin-bottom: 10px;
 }
